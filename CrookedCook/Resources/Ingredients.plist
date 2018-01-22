@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Lettuce</key>
+	<dict>
+		<key>price</key>
+		<real>1</real>
+		<key>color</key>
+		<array>
+			<integer>0</integer>
+			<real>1</real>
+			<integer>0</integer>
+		</array>
+	</dict>
+</dict>
+</plist>
