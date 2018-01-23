@@ -4,13 +4,54 @@
 <dict>
 	<key>Lettuce</key>
 	<dict>
+		<key>displayName</key>
+		<string>Lettuce</string>
 		<key>price</key>
 		<real>1</real>
 		<key>color</key>
 		<array>
 			<integer>0</integer>
-			<real>1</real>
+			<integer>255</integer>
 			<integer>0</integer>
+		</array>
+	</dict>
+	<key>Bacon</key>
+	<dict>
+		<key>displayName</key>
+		<string>Lettuce</string>
+		<key>price</key>
+		<real>1</real>
+		<key>color</key>
+		<array>
+			<integer>140</integer>
+			<integer>23</integer>
+			<integer>51</integer>
+		</array>
+	</dict>
+	<key>BBQ Sauce</key>
+	<dict>
+		<key>displayName</key>
+		<string>Lettuce</string>
+		<key>price</key>
+		<real>1</real>
+		<key>color</key>
+		<array>
+			<integer>255</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+	</dict>
+	<key>Bun</key>
+	<dict>
+		<key>displayName</key>
+		<string>Lettuce</string>
+		<key>price</key>
+		<real>1</real>
+		<key>color</key>
+		<array>
+			<integer>214</integer>
+			<integer>194</integer>
+			<integer>14</integer>
 		</array>
 	</dict>
 </dict>
