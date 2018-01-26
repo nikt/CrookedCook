@@ -18,7 +18,7 @@
 	<key>Bacon</key>
 	<dict>
 		<key>displayName</key>
-		<string>Lettuce</string>
+		<string>Bacon</string>
 		<key>price</key>
 		<real>1</real>
 		<key>color</key>
@@ -31,7 +31,7 @@
 	<key>BBQ Sauce</key>
 	<dict>
 		<key>displayName</key>
-		<string>Lettuce</string>
+		<string>BBQ Sauce</string>
 		<key>price</key>
 		<real>1</real>
 		<key>color</key>
@@ -41,10 +41,10 @@
 			<integer>0</integer>
 		</array>
 	</dict>
-	<key>Bun</key>
+	<key>Top Bun</key>
 	<dict>
 		<key>displayName</key>
-		<string>Lettuce</string>
+		<string>Top Bun</string>
 		<key>price</key>
 		<real>1</real>
 		<key>color</key>
@@ -52,6 +52,19 @@
 			<integer>214</integer>
 			<integer>194</integer>
 			<integer>14</integer>
+		</array>
+	</dict>
+	<key>Bottom Bun</key>
+	<dict>
+		<key>displayName</key>
+		<string>Bottom Bun</string>
+		<key>price</key>
+		<real>1</real>
+		<key>color</key>
+		<array>
+			<integer>175</integer>
+			<integer>145</integer>
+			<integer>10</integer>
 		</array>
 	</dict>
 </dict>

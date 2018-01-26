@@ -25,18 +25,16 @@ class IngredientFactory {
     static func getIngredient(name: String) -> Ingredient? {
         
         if let dictionary = sharedInstance.ingredientDictionary?[name] as? [String:AnyObject] {
-            let ingredient = Ingredient()
+            let ingredient = Ingredient(withName: name)
             
             ingredient.name = name
             ingredient.price = dictionary["price"] as? Double
             
             // set up kitchen sprite
-            let kitchenSprite = SKSpriteNode(imageNamed: "bucket")
-            kitchenSprite.colorBlendFactor = 1.0
+            ingredient.setKitchenSpriteTexture(imageName: "bucket")
             
             // set up recipe sprite
-            let recipeSprite = SKSpriteNode(imageNamed: "bucket")
-            recipeSprite.colorBlendFactor = 1.0
+            ingredient.setRecipeSpriteTexture(imageName: "bucket")
             
             if let colorComponents = dictionary["color"] as? NSArray {
                 ingredient.color = UIColor(
@@ -46,13 +44,9 @@ class IngredientFactory {
                     alpha:  1.0
                 )
                 
-                kitchenSprite.color = ingredient.color!
-                recipeSprite.color = ingredient.color!
+                ingredient.kitchenSprite.color = ingredient.color!
+                ingredient.recipeSprite.color = ingredient.color!
             }
-            
-            // final assignments
-            ingredient.kitchenSprite = kitchenSprite
-            ingredient.recipeSprite = recipeSprite
             
             return ingredient;
         }
