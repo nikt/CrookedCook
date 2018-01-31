@@ -14,7 +14,31 @@ class GameScene : SKScene {
     var selectedIngredient : Ingredient?
     var draggedSprite : SKSpriteNode?
     
-    public func setIngredientsArray(namesArray : NSArray) {
+    var blenderSprite : SKSpriteNode
+    var emptyLabel : SKLabelNode
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override init(size: CGSize) {
+        blenderSprite = SKSpriteNode(imageNamed: "bucket")
+        emptyLabel = SKLabelNode(fontNamed: "Avenir-Medium")
+        
+        super.init(size: size)
+        
+        blenderSprite.position = CGPoint(x: self.size.width * 0.5, y: self.size.height * 0.6)
+        blenderSprite.colorBlendFactor = 1.0
+        blenderSprite.color = UIColor.white
+        blenderSprite.name = "blender"
+        self.addChild(blenderSprite)
+        
+        emptyLabel.position = CGPoint(x: self.size.width * 0.5, y: self.size.height * 0.2)
+        emptyLabel.text = "Empty"
+        self.addChild(emptyLabel)
+    }
+    
+    public func setIngredientsArray(namesArray: NSArray) {
         // reset array
         if let array = self.ingredientsArray {
             array.removeAllObjects();
@@ -87,6 +111,10 @@ class GameScene : SKScene {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         // remove draggedSprite when the touch ends
         if let sprite = self.draggedSprite {
+            if (blenderSprite.intersects(sprite)) {
+                blenderSprite.color = sprite.color
+            }
+            
             sprite.removeFromParent()
             self.draggedSprite = nil
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD09847F2021962E002CD91C /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09847E2021962E002CD91C /* GameButton.swift */; };
 		ADB898132015A6AE00A1A2A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB898122015A6AE00A1A2A8 /* AppDelegate.swift */; };
 		ADB898152015A6AE00A1A2A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB898142015A6AE00A1A2A8 /* ViewController.swift */; };
 		ADB8981A2015A6AE00A1A2A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB898192015A6AE00A1A2A8 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD09847E2021962E002CD91C /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
 		ADB8980F2015A6AE00A1A2A8 /* CrookedCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrookedCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB898122015A6AE00A1A2A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADB898142015A6AE00A1A2A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				ADCC1275201AF6DF0021BAB1 /* GameScene.swift */,
 				ADB898272015B81D00A1A2A8 /* Ingredient.swift */,
 				ADB8982C2015C03200A1A2A8 /* IngredientFactory.swift */,
+				AD09847E2021962E002CD91C /* GameButton.swift */,
 				ADB898192015A6AE00A1A2A8 /* Assets.xcassets */,
 				ADB8981E2015A6AE00A1A2A8 /* Info.plist */,
 				ADB898292015BDA100A1A2A8 /* Resources */,
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADCC1276201AF6DF0021BAB1 /* GameScene.swift in Sources */,
+				AD09847F2021962E002CD91C /* GameButton.swift in Sources */,
 				ADB898152015A6AE00A1A2A8 /* ViewController.swift in Sources */,
 				ADB898132015A6AE00A1A2A8 /* AppDelegate.swift in Sources */,
 				ADB898282015B81D00A1A2A8 /* Ingredient.swift in Sources */,
